@@ -7,11 +7,11 @@ namespace Orchid\Platform\Core\Models;
 use Orchid\Platform\Access\UserAccess;
 use Illuminate\Notifications\Notifiable;
 use Orchid\Platform\Access\UserInterface;
+use Spatie\Activitylog\Traits\LogsActivity;
 use Orchid\Platform\Core\Traits\FilterTrait;
 use Orchid\Platform\Core\Traits\MultiLanguage;
 use Orchid\Platform\Notifications\ResetPassword;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Spatie\Activitylog\Traits\LogsActivity;
 
 class User extends Authenticatable implements UserInterface
 {

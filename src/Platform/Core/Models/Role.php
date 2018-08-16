@@ -7,9 +7,8 @@ namespace Orchid\Platform\Core\Models;
 use Orchid\Platform\Access\RoleAccess;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Platform\Access\RoleInterface;
-use Orchid\Platform\Core\Traits\FilterTrait;
 use Spatie\Activitylog\Traits\LogsActivity;
-
+use Orchid\Platform\Core\Traits\FilterTrait;
 
 class Role extends Model implements RoleInterface
 {
