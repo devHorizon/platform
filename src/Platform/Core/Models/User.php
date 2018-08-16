@@ -11,10 +11,11 @@ use Orchid\Platform\Core\Traits\FilterTrait;
 use Orchid\Platform\Core\Traits\MultiLanguage;
 use Orchid\Platform\Notifications\ResetPassword;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Spatie\Activitylog\Traits\LogsActivity;
 
 class User extends Authenticatable implements UserInterface
 {
-    use Notifiable, UserAccess, MultiLanguage, FilterTrait;
+    use Notifiable, UserAccess, MultiLanguage, FilterTrait, LogsActivity;
 
     /**
      * The database table used by the model.

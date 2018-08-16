@@ -9,10 +9,11 @@ use Orchid\Platform\Core\Traits\Attachment;
 use Orchid\Platform\Core\Builders\CommentBuilder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Spatie\Activitylog\Traits\LogsActivity;
 
 class Comment extends Model
 {
-    use Attachment;
+    use Attachment, LogsActivity;
     /**
      * @var string
      */

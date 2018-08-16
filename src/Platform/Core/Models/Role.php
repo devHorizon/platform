@@ -8,10 +8,12 @@ use Orchid\Platform\Access\RoleAccess;
 use Illuminate\Database\Eloquent\Model;
 use Orchid\Platform\Access\RoleInterface;
 use Orchid\Platform\Core\Traits\FilterTrait;
+use Spatie\Activitylog\Traits\LogsActivity;
+
 
 class Role extends Model implements RoleInterface
 {
-    use RoleAccess, FilterTrait;
+    use RoleAccess, FilterTrait, LogsActivity;
 
     /**
      * @var string
